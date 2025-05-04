@@ -12,9 +12,13 @@ interface LighthouseMarkerProps {
 }
 
 const LighthouseMarker: React.FC<LighthouseMarkerProps> = ({ id, lat, lon, name }) => {
-  const handlePress = () => {
-    lighthouseStore.refreshOne(id);
-    lighthouseStore.openDetail(id);
+  const handlePress = async () => {
+    try {
+      await lighthouseStore.refreshOne(id);
+      lighthouseStore.openDetail(id);
+    } catch (error) {
+      console.error('Error fetching lighthouse data:', error);
+    }
   };
 
   return (
@@ -25,8 +29,15 @@ const LighthouseMarker: React.FC<LighthouseMarkerProps> = ({ id, lat, lon, name 
       }}
       pinColor="#2196F3"
     >
-      <Callout tooltip>
-        <TouchableOpacity style={styles.callout} onPress={handlePress}>
+      <Callout 
+        tooltip 
+        onPress={handlePress}
+      >
+        <TouchableOpacity 
+          style={styles.callout}
+          onPress={handlePress}
+          activeOpacity={0.7}
+        >
           <Text style={styles.calloutTitle} numberOfLines={1}>{name}</Text>
           <InfoIcon size={20} />
         </TouchableOpacity>
