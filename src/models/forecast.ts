@@ -110,6 +110,18 @@ export interface AstroData {
   is_sun_up: number;
 }
 
+// Tide data interface
+export interface TideInfo {
+  tide_time: string;
+  tide_height_mt: number;
+  tide_height_ft: number;
+  tide_type: string;
+}
+
+export interface TideData {
+  tide: TideInfo[];
+}
+
 // Single day in the forecast
 export interface ForecastDay {
   date: string;
@@ -117,6 +129,7 @@ export interface ForecastDay {
   day: DayForecast;
   astro: AstroData;
   hour: HourForecast[];
+  tides?: TideData[];
 }
 
 // Weather API forecast response
