@@ -1,0 +1,23 @@
+{
+  "common": {
+    "welcome": "Velkommen",
+    "back": "Tilbake",
+    "ok": "OK",
+    "cancel": "Avbryt",
+    "save": "Lagre",
+    "delete": "Slett",
+    "loading": "Laster..."
+  },
+  "app": {
+    "name": "Kystvaer",
+    "description": "Din norske kystværapp"
+  },
+  "weather": {
+    "temperature": "Temperatur",
+    "wind": "Vind",
+    "wind_speed": "Vindhastighet",
+    "precipitation": "Nedbør",
+    "humidity": "Luftfuktighet",
+    "pressure": "Lufttrykk"
+  }
+}

@@ -1,0 +1,1498 @@
+[
+  {
+    "Id": 17345059,
+    "Name": "Abelvær",
+    "Description": "Idriftsatt 18.11.2021",
+    "Latitude": 64.723,
+    "Longitude": 11.16484,
+    "Elevation": null
+  },
+  {
+    "Id": 12475059,
+    "Name": "Anda fyr",
+    "Description": "813500",
+    "Latitude": 69.066442,
+    "Longitude": 15.17019,
+    "Elevation": null
+  },
+  {
+    "Id": 20087110,
+    "Name": "Andøya",
+    "Description": "Auto added by MetService",
+    "Latitude": 69.3073,
+    "Longitude": 16.1312,
+    "Elevation": null
+  },
+  {
+    "Id": 19025059,
+    "Name": "Askvoll",
+    "Description": "Idriftsatt 11.10.2022",
+    "Latitude": 61.34486,
+    "Longitude": 5.06508,
+    "Elevation": null
+  },
+  {
+    "Id": 20050540,
+    "Name": "Bergen - Florida",
+    "Description": "Auto added by MetService",
+    "Latitude": 60.383,
+    "Longitude": 5.3327,
+    "Elevation": null
+  },
+  {
+    "Id": 20098090,
+    "Name": "Berlevåg Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.873148,
+    "Longitude": 29.042397,
+    "Elevation": null
+  },
+  {
+    "Id": 20099710,
+    "Name": "Bjørnøya",
+    "Description": "Auto added by MetService",
+    "Latitude": 74.5035,
+    "Longitude": 18.998,
+    "Elevation": null
+  },
+  {
+    "Id": 24815059,
+    "Name": "Bodø Havn",
+    "Description": "Idriftsatt 17.01.2025",
+    "Latitude": 67.284552,
+    "Longitude": 14.364365,
+    "Elevation": null
+  },
+  {
+    "Id": 16965059,
+    "Name": "Bogøy",
+    "Description": "Idriftsatt 06.07.2022",
+    "Latitude": 63.871886,
+    "Longitude": 8.55089,
+    "Elevation": null
+  },
+  {
+    "Id": 13815059,
+    "Name": "Bolærne",
+    "Description": "Idriftsatt 18.05.2021",
+    "Latitude": 59.200571,
+    "Longitude": 10.575393,
+    "Elevation": null
+  },
+  {
+    "Id": 3765059,
+    "Name": "Bremanger Havn - Kalvåg",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 61.76436,
+    "Longitude": 4.884862,
+    "Elevation": null
+  },
+  {
+    "Id": 13715059,
+    "Name": "Bremanger Quarry",
+    "Description": "Idriftsatt 29.09.2021",
+    "Latitude": 61.771648,
+    "Longitude": 5.161705,
+    "Elevation": null
+  },
+  {
+    "Id": 15795059,
+    "Name": "Bremstein Fyr",
+    "Description": "Idriftsatt 10.05.2022",
+    "Latitude": 65.596651,
+    "Longitude": 11.286327,
+    "Elevation": null
+  },
+  {
+    "Id": 20071990,
+    "Name": "Buholmråsa Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 64.4013,
+    "Longitude": 10.455,
+    "Elevation": null
+  },
+  {
+    "Id": 12855059,
+    "Name": "Bygdøy",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 59.902271,
+    "Longitude": 10.698363,
+    "Elevation": null
+  },
+  {
+    "Id": 20086740,
+    "Name": "Bø I Vesterålen Iii",
+    "Description": "Auto added by MetService",
+    "Latitude": 68.6072,
+    "Longitude": 14.4347,
+    "Elevation": null
+  },
+  {
+    "Id": 20076925,
+    "Name": "Draugen",
+    "Description": "Auto added by MetService",
+    "Latitude": 64.352,
+    "Longitude": 7.77915,
+    "Elevation": null
+  },
+  {
+    "Id": 23315059,
+    "Name": "Drogeflui",
+    "Description": "Idriftsatt 07.11.2024",
+    "Latitude": 60.8154,
+    "Longitude": 4.95738,
+    "Elevation": null
+  },
+  {
+    "Id": 13215059,
+    "Name": "Duehammar",
+    "Description": "Idriftsatt 02.12.2020",
+    "Latitude": 59.297135,
+    "Longitude": 5.337831,
+    "Elevation": null
+  },
+  {
+    "Id": 25595059,
+    "Name": "Dyna Fyr",
+    "Description": "LA:59.894887, LO:10.688426",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 40000011,
+    "Name": "E6 Hålogalandsbrua",
+    "Description": "Auto added by DatexService",
+    "Latitude": 68.46841,
+    "Longitude": 17.482115,
+    "Elevation": null
+  },
+  {
+    "Id": 20099735,
+    "Name": "Edgeøya - Kapp Heuglin",
+    "Description": "Auto added by MetService",
+    "Latitude": 78.2508,
+    "Longitude": 22.8225,
+    "Elevation": null
+  },
+  {
+    "Id": 18965059,
+    "Name": "Edøya",
+    "Description": "Idriftsatt 25.10.2022",
+    "Latitude": 63.285164,
+    "Longitude": 8.138525,
+    "Elevation": null
+  },
+  {
+    "Id": 20043350,
+    "Name": "Eigerøya",
+    "Description": "Auto added by MetService",
+    "Latitude": 58.43517,
+    "Longitude": 5.87183,
+    "Elevation": null
+  },
+  {
+    "Id": 20090760,
+    "Name": "Fakken",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 20077034,
+    "Name": "Fauskane",
+    "Description": "Auto added by MetService",
+    "Latitude": 62.566785,
+    "Longitude": 5.726357,
+    "Elevation": null
+  },
+  {
+    "Id": 20052535,
+    "Name": "Fedje",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 695059,
+    "Name": "Fedje KV",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 60.78007,
+    "Longitude": 4.697864,
+    "Elevation": null
+  },
+  {
+    "Id": 19435059,
+    "Name": "Finnøya",
+    "Description": "Idriftsatt 26.10.2022",
+    "Latitude": 62.80422,
+    "Longitude": 6.509046,
+    "Elevation": null
+  },
+  {
+    "Id": 20050500,
+    "Name": "Flesland",
+    "Description": "Auto added by MetService",
+    "Latitude": 60.2892,
+    "Longitude": 5.2265,
+    "Elevation": null
+  },
+  {
+    "Id": 12975059,
+    "Name": "Flåm Sentrum",
+    "Description": "Collected by cloudservice from H01",
+    "Latitude": 60.859814,
+    "Longitude": 7.11123,
+    "Elevation": null
+  },
+  {
+    "Id": 40000001,
+    "Name": "Flåskjær - E39",
+    "Description": "Auto added by DatexService",
+    "Latitude": 62.270096,
+    "Longitude": 5.991855,
+    "Elevation": null
+  },
+  {
+    "Id": 20094500,
+    "Name": "Fruholmen Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 71.0937,
+    "Longitude": 23.9817,
+    "Elevation": null
+  },
+  {
+    "Id": 12485059,
+    "Name": "Fugløya",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 58.980574,
+    "Longitude": 9.803816,
+    "Elevation": null
+  },
+  {
+    "Id": 6895049,
+    "Name": "Færder",
+    "Description": "000100",
+    "Latitude": 59.026713,
+    "Longitude": 10.52453,
+    "Elevation": null
+  },
+  {
+    "Id": 20096600,
+    "Name": "Gamvik-Skjånes",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 40000002,
+    "Name": "Giskebrua - FV658",
+    "Description": "Auto added by DatexService",
+    "Latitude": 62.508213,
+    "Longitude": 6.07633,
+    "Elevation": null
+  },
+  {
+    "Id": 60000002,
+    "Name": "Gismarvik",
+    "Description": "Ardexa service station on top of wind turbine",
+    "Latitude": 59.321723,
+    "Longitude": 5.426789,
+    "Elevation": 30.0
+  },
+  {
+    "Id": 40000005,
+    "Name": "Gjemndemssund brua - E39",
+    "Description": "Auto added by DatexService",
+    "Latitude": 62.971245,
+    "Longitude": 7.779368,
+    "Elevation": null
+  },
+  {
+    "Id": 20076923,
+    "Name": "Gullfaks C",
+    "Description": "Auto added by MetService",
+    "Latitude": 61.2042,
+    "Longitude": 2.2687,
+    "Elevation": null
+  },
+  {
+    "Id": 12045059,
+    "Name": "Gullholmen",
+    "Description": "Idriftsatt 04.05.2021",
+    "Latitude": 59.43545,
+    "Longitude": 10.577567,
+    "Elevation": null
+  },
+  {
+    "Id": 20017280,
+    "Name": "Gullholmen",
+    "Description": "Auto added by MetService",
+    "Latitude": 59.4352,
+    "Longitude": 10.578,
+    "Elevation": null
+  },
+  {
+    "Id": 16735059,
+    "Name": "Gutvik",
+    "Description": "idriftsatt 17.11.2021",
+    "Latitude": 65.0847,
+    "Longitude": 11.82987,
+    "Elevation": null
+  },
+  {
+    "Id": 12735059,
+    "Name": "Hallangsodden",
+    "Description": "Idriftsatt 11.05.2021",
+    "Latitude": 59.685301,
+    "Longitude": 10.611276,
+    "Elevation": null
+  },
+  {
+    "Id": 20071850,
+    "Name": "Halten Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 64.1727,
+    "Longitude": 9.4052,
+    "Elevation": null
+  },
+  {
+    "Id": 20094280,
+    "Name": "Hammerfest Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.6807,
+    "Longitude": 23.6772,
+    "Elevation": null
+  },
+  {
+    "Id": 20094281,
+    "Name": "Hammerfest Lufthavn",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 17385059,
+    "Name": "Hasselvika",
+    "Description": "Idriftsatt 08.12.2021",
+    "Latitude": 63.63341,
+    "Longitude": 9.82769,
+    "Elevation": null
+  },
+  {
+    "Id": 18975059,
+    "Name": "Hasvik",
+    "Description": "Idriftsatt 10.11.2022",
+    "Latitude": 70.483803,
+    "Longitude": 22.161812,
+    "Elevation": null
+  },
+  {
+    "Id": 20092750,
+    "Name": "Hasvik Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.4865,
+    "Longitude": 22.1457,
+    "Elevation": null
+  },
+  {
+    "Id": 20076928,
+    "Name": "Heidrun",
+    "Description": "Auto added by MetService",
+    "Latitude": 65.32285,
+    "Longitude": 7.3156,
+    "Elevation": null
+  },
+  {
+    "Id": 20076932,
+    "Name": "Heimdal",
+    "Description": "Auto added by MetService",
+    "Latitude": 59.5742,
+    "Longitude": 2.2273,
+    "Elevation": null
+  },
+  {
+    "Id": 20088690,
+    "Name": "Hekkingen Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 69.6005,
+    "Longitude": 17.83117,
+    "Elevation": null
+  },
+  {
+    "Id": 20082410,
+    "Name": "Helligvær Ii",
+    "Description": "Auto added by MetService",
+    "Latitude": 67.4048,
+    "Longitude": 13.8958,
+    "Elevation": null
+  },
+  {
+    "Id": 14525059,
+    "Name": "Hemnes",
+    "Description": "Idriftsatt 02.12.2020",
+    "Latitude": 59.203132,
+    "Longitude": 5.171293,
+    "Elevation": null
+  },
+  {
+    "Id": 40000007,
+    "Name": "Hitra - FV714",
+    "Description": "Auto added by DatexService",
+    "Latitude": 63.55382,
+    "Longitude": 9.053533,
+    "Elevation": null
+  },
+  {
+    "Id": 20065451,
+    "Name": "Hitra Sandstad Ii",
+    "Description": "Auto added by MetService",
+    "Latitude": 63.5187,
+    "Longitude": 9.1125,
+    "Elevation": null
+  },
+  {
+    "Id": 18855059,
+    "Name": "Hofles",
+    "Description": "Idriftsatt 27.09.2022",
+    "Latitude": 64.82739,
+    "Longitude": 11.6124,
+    "Elevation": null
+  },
+  {
+    "Id": 16665059,
+    "Name": "Hokstad",
+    "Description": "Idriftsatt 19.11.2021",
+    "Latitude": 63.798309,
+    "Longitude": 11.168117,
+    "Elevation": null
+  },
+  {
+    "Id": 23805059,
+    "Name": "Holm Fergekai",
+    "Description": "Idriftsatt 07.06.2024",
+    "Latitude": 65.182766,
+    "Longitude": 12.113839,
+    "Elevation": null
+  },
+  {
+    "Id": 20094710,
+    "Name": "Honningsvåg",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 20094680,
+    "Name": "Honningsvåg Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 71.0105,
+    "Longitude": 25.9782,
+    "Elevation": null
+  },
+  {
+    "Id": 20099720,
+    "Name": "Hopen",
+    "Description": "Auto added by MetService",
+    "Latitude": 76.5097,
+    "Longitude": 25.0133,
+    "Elevation": null
+  },
+  {
+    "Id": 20099754,
+    "Name": "Hornsund",
+    "Description": "Auto added by MetService",
+    "Latitude": 77.0002,
+    "Longitude": 15.5353,
+    "Elevation": null
+  },
+  {
+    "Id": 6955059,
+    "Name": "Hvasser",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 59.066326,
+    "Longitude": 10.433958,
+    "Elevation": null
+  },
+  {
+    "Id": 2024001,
+    "Name": "Igerøy",
+    "Description": "",
+    "Latitude": 65.677306,
+    "Longitude": 12.133083,
+    "Elevation": null
+  },
+  {
+    "Id": 20099950,
+    "Name": "Jan Mayen",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.9394,
+    "Longitude": -8.669,
+    "Elevation": null
+  },
+  {
+    "Id": 6175049,
+    "Name": "Jomfruland",
+    "Description": "052500",
+    "Latitude": 58.86509,
+    "Longitude": 9.59637,
+    "Elevation": null
+  },
+  {
+    "Id": 20099935,
+    "Name": "Karl Xii Øya",
+    "Description": "Auto added by MetService",
+    "Latitude": 80.6518,
+    "Longitude": 25.0048,
+    "Elevation": null
+  },
+  {
+    "Id": 18995059,
+    "Name": "Kilboghavn",
+    "Description": "Idriftsatt 26.01.2023",
+    "Latitude": 66.489633,
+    "Longitude": 13.228116,
+    "Elevation": null
+  },
+  {
+    "Id": 20099370,
+    "Name": "Kirkenes",
+    "Description": "N/A",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 12095059,
+    "Name": "Kjøkøy",
+    "Description": "Idriftsatt 31.05.2021",
+    "Latitude": 59.132632,
+    "Longitude": 10.950073,
+    "Elevation": null
+  },
+  {
+    "Id": 445004777,
+    "Name": "Kjørtingen SØ",
+    "Description": "044500",
+    "Latitude": 59.008377,
+    "Longitude": 9.775898,
+    "Elevation": null
+  },
+  {
+    "Id": 12135059,
+    "Name": "Kongshaugen",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 60.337542,
+    "Longitude": 5.210791,
+    "Elevation": null
+  },
+  {
+    "Id": 20099740,
+    "Name": "Kongsøya",
+    "Description": "Auto added by MetService",
+    "Latitude": 78.918,
+    "Longitude": 28.834,
+    "Elevation": null
+  },
+  {
+    "Id": 1115059,
+    "Name": "Kristiansand Havn",
+    "Description": "0723BP",
+    "Latitude": 58.140201,
+    "Longitude": 7.988873,
+    "Elevation": null
+  },
+  {
+    "Id": 20064330,
+    "Name": "Kristiansund Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 63.1093,
+    "Longitude": 7.8158,
+    "Elevation": null
+  },
+  {
+    "Id": 20059110,
+    "Name": "Kråkenes",
+    "Description": "Auto added by MetService",
+    "Latitude": 62.034,
+    "Longitude": 4.9865,
+    "Elevation": null
+  },
+  {
+    "Id": 13505059,
+    "Name": "Kvitsøy",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 59.061097,
+    "Longitude": 5.399392,
+    "Elevation": null
+  },
+  {
+    "Id": 20044610,
+    "Name": "Kvitsøy - Nordbø",
+    "Description": "Auto added by MetService",
+    "Latitude": 59.0705,
+    "Longitude": 5.4122,
+    "Elevation": null
+  },
+  {
+    "Id": 20099938,
+    "Name": "Kvitøya",
+    "Description": "Auto added by MetService",
+    "Latitude": 80.1035,
+    "Longitude": 31.4585,
+    "Elevation": null
+  },
+  {
+    "Id": 6335049,
+    "Name": "Langesund",
+    "Description": "046300",
+    "Latitude": 59.0082,
+    "Longitude": 9.747081,
+    "Elevation": null
+  },
+  {
+    "Id": 50000001,
+    "Name": "Larvik Havn",
+    "Description": "IxonService station",
+    "Latitude": 59.037539,
+    "Longitude": 10.038567,
+    "Elevation": null
+  },
+  {
+    "Id": 20085560,
+    "Name": "Leknes Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 68.155787,
+    "Longitude": 13.61214,
+    "Elevation": null
+  },
+  {
+    "Id": 5725049,
+    "Name": "Lille Presteskjær",
+    "Description": "092000",
+    "Latitude": 58.323,
+    "Longitude": 6.257657,
+    "Elevation": null
+  },
+  {
+    "Id": 23925059,
+    "Name": "Lille Skottholmen",
+    "Description": "Data settes inn fra H2CloudService",
+    "Latitude": 58.4501,
+    "Longitude": 8.7792,
+    "Elevation": null
+  },
+  {
+    "Id": 20041770,
+    "Name": "Lindesnes Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 57.9815,
+    "Longitude": 7.048,
+    "Elevation": null
+  },
+  {
+    "Id": 20042160,
+    "Name": "Lista Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 58.109,
+    "Longitude": 6.5675,
+    "Elevation": null
+  },
+  {
+    "Id": 16615059,
+    "Name": "Lomsøy",
+    "Description": "Idriftsatt 10.12.2021",
+    "Latitude": 63.84962,
+    "Longitude": 8.50057,
+    "Elevation": null
+  },
+  {
+    "Id": 16675059,
+    "Name": "Lund",
+    "Description": "Idriftsatt 17.11.2021",
+    "Latitude": 64.76825,
+    "Longitude": 11.62367,
+    "Elevation": null
+  },
+  {
+    "Id": 20035860,
+    "Name": "Lyngør Fyr",
+    "Description": "Auto added by MetService - Deaktivert pga feil på data fra Met.no",
+    "Latitude": 58.6362,
+    "Longitude": 9.1478,
+    "Elevation": null
+  },
+  {
+    "Id": 20098400,
+    "Name": "Makkaur Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.7057,
+    "Longitude": 30.07,
+    "Elevation": null
+  },
+  {
+    "Id": 40000009,
+    "Name": "Malvik - E6",
+    "Description": "Auto added by DatexService",
+    "Latitude": 63.426212,
+    "Longitude": 10.663847,
+    "Elevation": null
+  },
+  {
+    "Id": 13485059,
+    "Name": "Marøy",
+    "Description": "",
+    "Latitude": 60.711874,
+    "Longitude": 4.868172,
+    "Elevation": null
+  },
+  {
+    "Id": 18825059,
+    "Name": "Mausund",
+    "Description": "Idriftsatt 06.07.2022",
+    "Latitude": 63.869194,
+    "Longitude": 8.661468,
+    "Elevation": null
+  },
+  {
+    "Id": 11825059,
+    "Name": "Melkøya",
+    "Description": "Idriftsatt 03.11.21 Lat:70.68914 Long: 23.597407",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 476004777,
+    "Name": "Midtfjordskjær",
+    "Description": "047600",
+    "Latitude": 59.054023,
+    "Longitude": 9.655742,
+    "Elevation": null
+  },
+  {
+    "Id": 20076900,
+    "Name": "Mike",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 20080610,
+    "Name": "Myken",
+    "Description": "Auto added by MetService",
+    "Latitude": 66.7628,
+    "Longitude": 12.486,
+    "Elevation": null
+  },
+  {
+    "Id": 21855059,
+    "Name": "Måløy",
+    "Description": "Idriftsatt 03.07.2023 - Nordfjord Havn",
+    "Latitude": 61.939004,
+    "Longitude": 5.121701,
+    "Elevation": null
+  },
+  {
+    "Id": 20090720,
+    "Name": "Måsvik",
+    "Description": "Auto added by MetService",
+    "Latitude": 69.9903,
+    "Longitude": 18.6938,
+    "Elevation": null
+  },
+  {
+    "Id": 1235049,
+    "Name": "Narvik Havn",
+    "Description": "729900",
+    "Latitude": 68.414439,
+    "Longitude": 17.409854,
+    "Elevation": null
+  },
+  {
+    "Id": 8035059,
+    "Name": "Narvik Sentrum",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 68.43715,
+    "Longitude": 17.42135,
+    "Elevation": null
+  },
+  {
+    "Id": 11785059,
+    "Name": "Norcem",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 59.063386,
+    "Longitude": 9.692025,
+    "Elevation": null
+  },
+  {
+    "Id": 20075410,
+    "Name": "Nordøyan Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 64.7977,
+    "Longitude": 10.5493,
+    "Elevation": null
+  },
+  {
+    "Id": 20076930,
+    "Name": "Norne",
+    "Description": "Auto added by MetService",
+    "Latitude": 66.0256,
+    "Longitude": 8.085,
+    "Elevation": null
+  },
+  {
+    "Id": 20099910,
+    "Name": "Ny-Ålesund",
+    "Description": "Auto added by MetService",
+    "Latitude": 78.9218,
+    "Longitude": 11.9325,
+    "Elevation": null
+  },
+  {
+    "Id": 20044080,
+    "Name": "Obrestad Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 58.6592,
+    "Longitude": 5.5553,
+    "Elevation": null
+  },
+  {
+    "Id": 5685049,
+    "Name": "Oksøy",
+    "Description": "071700",
+    "Latitude": 58.07307,
+    "Longitude": 8.054014,
+    "Elevation": null
+  },
+  {
+    "Id": 20039100,
+    "Name": "Oksøy Fyr",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 20062480,
+    "Name": "Ona Ii",
+    "Description": "Auto added by MetService",
+    "Latitude": 62.8585,
+    "Longitude": 6.5378,
+    "Elevation": null
+  },
+  {
+    "Id": 20090721,
+    "Name": "Rebbenes",
+    "Description": "",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 20080740,
+    "Name": "Reipå",
+    "Description": "Auto added by MetService",
+    "Latitude": 66.9035,
+    "Longitude": 13.646,
+    "Elevation": null
+  },
+  {
+    "Id": 40000006,
+    "Name": "Rensvik / Kristiansund - RV70",
+    "Description": "Auto added by DatexService",
+    "Latitude": 63.085598,
+    "Longitude": 7.797772,
+    "Elevation": null
+  },
+  {
+    "Id": 7475049,
+    "Name": "Ringsholmen",
+    "Description": "047910",
+    "Latitude": 59.090458,
+    "Longitude": 9.620772,
+    "Elevation": null
+  },
+  {
+    "Id": 20094230,
+    "Name": "Rognsundet",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.4107,
+    "Longitude": 22.8177,
+    "Elevation": null
+  },
+  {
+    "Id": 40000010,
+    "Name": "Rørvik - FV770",
+    "Description": "Auto added by DatexService",
+    "Latitude": 64.848755,
+    "Longitude": 11.230776,
+    "Elevation": null
+  },
+  {
+    "Id": 20085890,
+    "Name": "Røst Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 67.5267,
+    "Longitude": 12.1038,
+    "Elevation": null
+  },
+  {
+    "Id": 20047350,
+    "Name": "Røvær",
+    "Description": "",
+    "Latitude": 59.4382,
+    "Longitude": 5.078,
+    "Elevation": null
+  },
+  {
+    "Id": 1415049,
+    "Name": "Røvær",
+    "Description": "132900",
+    "Latitude": 59.44026,
+    "Longitude": 5.08351,
+    "Elevation": null
+  },
+  {
+    "Id": 11845059,
+    "Name": "Sandesund bru",
+    "Description": "<Valgfri tekst>1184",
+    "Latitude": 59.270321,
+    "Longitude": 11.095333,
+    "Elevation": null
+  },
+  {
+    "Id": 20076750,
+    "Name": "Sandnessjøen Lh - Stokka",
+    "Description": "Auto added by MetService",
+    "Latitude": 65.9635,
+    "Longitude": 12.4785,
+    "Elevation": null
+  },
+  {
+    "Id": 14675059,
+    "Name": "Sjursøya",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 59.88908,
+    "Longitude": 10.75391,
+    "Elevation": null
+  },
+  {
+    "Id": 23255059,
+    "Name": "Skatestraumen",
+    "Description": "",
+    "Latitude": 61.87177,
+    "Longitude": 5.21358,
+    "Elevation": null
+  },
+  {
+    "Id": 16915059,
+    "Name": "Skei",
+    "Description": "Idriftsatt 16.11.2021",
+    "Latitude": 65.08737,
+    "Longitude": 11.73793,
+    "Elevation": null
+  },
+  {
+    "Id": 40000003,
+    "Name": "Skjelten (Lepsøyrevet) - PV98851",
+    "Description": "Auto added by DatexService",
+    "Latitude": 62.586906,
+    "Longitude": 6.265809,
+    "Elevation": null
+  },
+  {
+    "Id": 17375059,
+    "Name": "Skjervøya",
+    "Description": "Idriftsatt 19.11.2021",
+    "Latitude": 64.294981,
+    "Longitude": 10.295217,
+    "Elevation": null
+  },
+  {
+    "Id": 20075550,
+    "Name": "Sklinna Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 65.2023,
+    "Longitude": 10.9965,
+    "Elevation": null
+  },
+  {
+    "Id": 18985059,
+    "Name": "Skrova",
+    "Description": "Idrftsatt 28.11.2023",
+    "Latitude": 68.161112,
+    "Longitude": 14.650722,
+    "Elevation": null
+  },
+  {
+    "Id": 20085380,
+    "Name": "Skrova Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 68.1535,
+    "Longitude": 14.6485,
+    "Elevation": null
+  },
+  {
+    "Id": 20076926,
+    "Name": "Sleipner A",
+    "Description": "Auto added by MetService",
+    "Latitude": 58.3711,
+    "Longitude": 1.9091,
+    "Elevation": null
+  },
+  {
+    "Id": 12915059,
+    "Name": "Slemmestad",
+    "Description": "",
+    "Latitude": 59.78349,
+    "Longitude": 10.497709,
+    "Elevation": null
+  },
+  {
+    "Id": 20096400,
+    "Name": "Slettnes Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 71.0888,
+    "Longitude": 28.217,
+    "Elevation": null
+  },
+  {
+    "Id": 20048330,
+    "Name": "Slåtterøy Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 59.907,
+    "Longitude": 5.0668,
+    "Elevation": null
+  },
+  {
+    "Id": 20044560,
+    "Name": "Sola",
+    "Description": "Auto added by MetService",
+    "Latitude": 58.8843,
+    "Longitude": 5.637,
+    "Elevation": null
+  },
+  {
+    "Id": 13225059,
+    "Name": "Solheimfjell",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 61.6038,
+    "Longitude": 5.10369,
+    "Elevation": null
+  },
+  {
+    "Id": 20080102,
+    "Name": "Solvær Iii",
+    "Description": "Auto added by MetService",
+    "Latitude": 66.3705,
+    "Longitude": 12.611,
+    "Elevation": null
+  },
+  {
+    "Id": 5905049,
+    "Name": "Store Torungen",
+    "Description": "061400",
+    "Latitude": 58.39885,
+    "Longitude": 8.79025,
+    "Elevation": null
+  },
+  {
+    "Id": 17475059,
+    "Name": "Storfosna",
+    "Description": "Idriftsatt 07.12.2021",
+    "Latitude": 63.658892,
+    "Longitude": 9.436462,
+    "Elevation": null
+  },
+  {
+    "Id": 60000001,
+    "Name": "Storøy",
+    "Description": "Ardexa service station on top of wind turbine",
+    "Latitude": 59.415526,
+    "Longitude": 5.227269,
+    "Elevation": 30.0
+  },
+  {
+    "Id": 20017000,
+    "Name": "Strømtangen Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 59.151546,
+    "Longitude": 10.828299,
+    "Elevation": null
+  },
+  {
+    "Id": 13795059,
+    "Name": "Stykkhaugen",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 60.317655,
+    "Longitude": 5.122896,
+    "Elevation": null
+  },
+  {
+    "Id": 20065940,
+    "Name": "Sula",
+    "Description": "Auto added by MetService",
+    "Latitude": 63.8429,
+    "Longitude": 8.4543,
+    "Elevation": null
+  },
+  {
+    "Id": 20665059,
+    "Name": "Svelvikstrømmen",
+    "Description": "",
+    "Latitude": 59.608,
+    "Longitude": 10.4104,
+    "Elevation": null
+  },
+  {
+    "Id": 16695059,
+    "Name": "Sveneset",
+    "Description": "Idriftsatt 21.12.2021",
+    "Latitude": 61.857525,
+    "Longitude": 5.303143,
+    "Elevation": null
+  },
+  {
+    "Id": 20029950,
+    "Name": "Svenner Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 58.9688,
+    "Longitude": 10.148,
+    "Elevation": null
+  },
+  {
+    "Id": 20059800,
+    "Name": "Svinøy Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 62.3293,
+    "Longitude": 5.268,
+    "Elevation": null
+  },
+  {
+    "Id": 20044300,
+    "Name": "Særheim",
+    "Description": "Auto added by MetService",
+    "Latitude": 58.7605,
+    "Longitude": 5.6508,
+    "Elevation": null
+  },
+  {
+    "Id": 7245049,
+    "Name": "Søndre Katland",
+    "Description": "084100",
+    "Latitude": 58.056939,
+    "Longitude": 6.840388,
+    "Elevation": 14.5
+  },
+  {
+    "Id": 16395059,
+    "Name": "Sørburøy",
+    "Description": "Idriftsatt 09.12.2021",
+    "Latitude": 63.978024,
+    "Longitude": 9.088284,
+    "Elevation": null
+  },
+  {
+    "Id": 20099752,
+    "Name": "Sørkappøya",
+    "Description": "Auto added by MetService",
+    "Latitude": 76.4733,
+    "Longitude": 16.5428,
+    "Elevation": null
+  },
+  {
+    "Id": 2024002,
+    "Name": "Søvik",
+    "Description": "",
+    "Latitude": 65.926917,
+    "Longitude": 12.435111,
+    "Elevation": null
+  },
+  {
+    "Id": 20082450,
+    "Name": "Tennholmen",
+    "Description": "Auto added by MetService",
+    "Latitude": 67.34,
+    "Longitude": 13.57,
+    "Elevation": null
+  },
+  {
+    "Id": 19645059,
+    "Name": "Tjeldsundet",
+    "Description": "",
+    "Latitude": 68.551453,
+    "Longitude": 16.481071,
+    "Elevation": null
+  },
+  {
+    "Id": 20076530,
+    "Name": "Tjøtta",
+    "Description": "Auto added by MetService",
+    "Latitude": 65.8295,
+    "Longitude": 12.4255,
+    "Elevation": null
+  },
+  {
+    "Id": 480004777,
+    "Name": "Torsberg",
+    "Description": "048000",
+    "Latitude": 59.122623,
+    "Longitude": 9.605432,
+    "Elevation": null
+  },
+  {
+    "Id": 20090800,
+    "Name": "Torsvåg Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.2452,
+    "Longitude": 19.4997,
+    "Elevation": null
+  },
+  {
+    "Id": 7355049,
+    "Name": "Tranøy",
+    "Description": "719500",
+    "Latitude": 68.183,
+    "Longitude": 15.659167,
+    "Elevation": null
+  },
+  {
+    "Id": 40000004,
+    "Name": "Tresfjordbrua - E136",
+    "Description": "Auto added by DatexService",
+    "Latitude": 62.611256,
+    "Longitude": 7.112552,
+    "Elevation": null
+  },
+  {
+    "Id": 20076931,
+    "Name": "Troll A",
+    "Description": "Auto added by MetService",
+    "Latitude": 60.6435,
+    "Longitude": 3.7193,
+    "Elevation": null
+  },
+  {
+    "Id": 20047300,
+    "Name": "Utsira Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 59.3065,
+    "Longitude": 4.8723,
+    "Elevation": null
+  },
+  {
+    "Id": 20098790,
+    "Name": "Vadsø Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.0653,
+    "Longitude": 29.8352,
+    "Elevation": null
+  },
+  {
+    "Id": 16905059,
+    "Name": "Valset",
+    "Description": "Idriftsatt 06.12.2021",
+    "Latitude": 63.638828,
+    "Longitude": 9.687796,
+    "Elevation": null
+  },
+  {
+    "Id": 16945059,
+    "Name": "Vanvikan",
+    "Description": "Idriftsatt 04.01.2022",
+    "Latitude": 63.55313,
+    "Longitude": 10.22286,
+    "Elevation": null
+  },
+  {
+    "Id": 20098580,
+    "Name": "Vardø Lufthavn",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.35129,
+    "Longitude": 31.050231,
+    "Elevation": null
+  },
+  {
+    "Id": 20098550,
+    "Name": "Vardø Radio",
+    "Description": "Auto added by MetService",
+    "Latitude": 70.3707,
+    "Longitude": 31.0962,
+    "Elevation": null
+  },
+  {
+    "Id": 20076450,
+    "Name": "Vega - Vallsjø",
+    "Description": "Auto added by MetService",
+    "Latitude": 65.7017,
+    "Longitude": 11.8562,
+    "Elevation": null
+  },
+  {
+    "Id": 20065310,
+    "Name": "Veiholmen",
+    "Description": "Auto added by MetService",
+    "Latitude": 63.5176,
+    "Longitude": 7.9482,
+    "Elevation": null
+  },
+  {
+    "Id": 20099927,
+    "Name": "Verlegenhuken",
+    "Description": "Auto added by MetService",
+    "Latitude": 80.0555,
+    "Longitude": 16.2433,
+    "Elevation": null
+  },
+  {
+    "Id": 20020932,
+    "Name": "Vestfjorden",
+    "Description": "Added by MetService",
+    "Latitude": 68.2252,
+    "Longitude": 15.4733,
+    "Elevation": null
+  },
+  {
+    "Id": 455004777,
+    "Name": "Vestre Brattholmen",
+    "Description": "045500",
+    "Latitude": null,
+    "Longitude": null,
+    "Elevation": null
+  },
+  {
+    "Id": 5265049,
+    "Name": "Vigdel",
+    "Description": "100000",
+    "Latitude": 58.85197,
+    "Longitude": 5.55158,
+    "Elevation": null
+  },
+  {
+    "Id": 20060990,
+    "Name": "Vigra",
+    "Description": "Auto added by MetService",
+    "Latitude": 62.5617,
+    "Longitude": 6.115,
+    "Elevation": null
+  },
+  {
+    "Id": 8925059,
+    "Name": "Vikertangen",
+    "Description": "10",
+    "Latitude": 59.032431,
+    "Longitude": 10.945201,
+    "Elevation": null
+  },
+  {
+    "Id": 13265059,
+    "Name": "Vikingneset",
+    "Description": "<Valgfri tekst>",
+    "Latitude": 60.854799,
+    "Longitude": 4.931659,
+    "Elevation": null
+  },
+  {
+    "Id": 19005059,
+    "Name": "Værlandet",
+    "Description": "Idriftsatt 11.10.2022",
+    "Latitude": 61.30427,
+    "Longitude": 4.74073,
+    "Elevation": null
+  },
+  {
+    "Id": 20085840,
+    "Name": "Værøy Heliport",
+    "Description": "Auto added by MetService",
+    "Latitude": 67.6527,
+    "Longitude": 12.7228,
+    "Elevation": null
+  },
+  {
+    "Id": 14475059,
+    "Name": "Våganeset",
+    "Description": "Idriftsatt 01.12.2020",
+    "Latitude": 59.227969,
+    "Longitude": 5.496891,
+    "Elevation": null
+  },
+  {
+    "Id": 21845059,
+    "Name": "Vågsfjorden",
+    "Description": "Idriftsatt 30.08.2023",
+    "Latitude": 61.93608,
+    "Longitude": 5.00729,
+    "Elevation": null
+  },
+  {
+    "Id": 20080880,
+    "Name": "Våtvikfjellet",
+    "Description": "Auto added by MetService",
+    "Latitude": 67.093,
+    "Longitude": 14.1663,
+    "Elevation": null
+  },
+  {
+    "Id": 10145059,
+    "Name": "Ytre Raunholmen",
+    "Description": "Ikke idriftsatt",
+    "Latitude": 60.799567,
+    "Longitude": 5.162101,
+    "Elevation": null
+  },
+  {
+    "Id": 20057770,
+    "Name": "Ytterøyane Fyr",
+    "Description": "Auto added by MetService",
+    "Latitude": 61.5717,
+    "Longitude": 4.6817,
+    "Elevation": null
+  },
+  {
+    "Id": 19015059,
+    "Name": "Øksfjord",
+    "Description": "Idriftsatt 09.11.2022",
+    "Latitude": 70.233331,
+    "Longitude": 22.357909,
+    "Elevation": null
+  },
+  {
+    "Id": 20071550,
+    "Name": "Ørland Iii",
+    "Description": "Auto added by MetService",
+    "Latitude": 63.7044,
+    "Longitude": 9.6104,
+    "Elevation": null
+  },
+  {
+    "Id": 40000008,
+    "Name": "Øysand/Buvika - E39",
+    "Description": "Auto added by DatexService",
+    "Latitude": 63.323704,
+    "Longitude": 10.243855,
+    "Elevation": null
+  },
+  {
+    "Id": 451004777,
+    "Name": "Åmlirogna",
+    "Description": "045100",
+    "Latitude": 58.991665,
+    "Longitude": 9.83757,
+    "Elevation": null
+  },
+  {
+    "Id": 20077040,
+    "Name": "Aasta Hansteen",
+    "Description": "Added by MetService",
+    "Latitude": 67.0672,
+    "Longitude": 7.0947,
+    "Elevation": null
+  }
+]

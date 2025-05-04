@@ -1,0 +1,23 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "back": "Back",
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "loading": "Loading..."
+  },
+  "app": {
+    "name": "Kystvaer",
+    "description": "Your Norwegian coastal weather app"
+  },
+  "weather": {
+    "temperature": "Temperature",
+    "wind": "Wind",
+    "wind_speed": "Wind Speed",
+    "precipitation": "Precipitation",
+    "humidity": "Humidity",
+    "pressure": "Pressure"
+  }
+}
