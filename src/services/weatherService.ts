@@ -29,9 +29,11 @@ export const fetchForecast = async (
         params: {
           key: API_KEY,
           q: `${lat},${lon}`,
-          days: 2, // 48 hours of forecast data
+          days: 2,
           aqi: 'no',
           alerts: 'no',
+          tide: 'yes',
+          marine: 'yes',
         },
       }
     );
