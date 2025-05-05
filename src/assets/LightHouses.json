@@ -48,14 +48,6 @@
     "Elevation": null
   },
   {
-    "Id": 20099710,
-    "Name": "Bjørnøya",
-    "Description": "Auto added by MetService",
-    "Latitude": 74.5035,
-    "Longitude": 18.998,
-    "Elevation": null
-  },
-  {
     "Id": 24815059,
     "Name": "Bodø Havn",
     "Description": "Idriftsatt 17.01.2025",
@@ -152,14 +144,6 @@
     "Elevation": null
   },
   {
-    "Id": 25595059,
-    "Name": "Dyna Fyr",
-    "Description": "LA:59.894887, LO:10.688426",
-    "Latitude": null,
-    "Longitude": null,
-    "Elevation": null
-  },
-  {
     "Id": 40000011,
     "Name": "E6 Hålogalandsbrua",
     "Description": "Auto added by DatexService",
@@ -192,27 +176,11 @@
     "Elevation": null
   },
   {
-    "Id": 20090760,
-    "Name": "Fakken",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
-    "Elevation": null
-  },
-  {
     "Id": 20077034,
     "Name": "Fauskane",
     "Description": "Auto added by MetService",
     "Latitude": 62.566785,
     "Longitude": 5.726357,
-    "Elevation": null
-  },
-  {
-    "Id": 20052535,
-    "Name": "Fedje",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
     "Elevation": null
   },
   {
@@ -277,14 +245,6 @@
     "Description": "000100",
     "Latitude": 59.026713,
     "Longitude": 10.52453,
-    "Elevation": null
-  },
-  {
-    "Id": 20096600,
-    "Name": "Gamvik-Skjånes",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
     "Elevation": null
   },
   {
@@ -365,14 +325,6 @@
     "Description": "Auto added by MetService",
     "Latitude": 70.6807,
     "Longitude": 23.6772,
-    "Elevation": null
-  },
-  {
-    "Id": 20094281,
-    "Name": "Hammerfest Lufthavn",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
     "Elevation": null
   },
   {
@@ -480,27 +432,11 @@
     "Elevation": null
   },
   {
-    "Id": 20094710,
-    "Name": "Honningsvåg",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
-    "Elevation": null
-  },
-  {
     "Id": 20094680,
     "Name": "Honningsvåg Lufthavn",
     "Description": "Auto added by MetService",
     "Latitude": 71.0105,
     "Longitude": 25.9782,
-    "Elevation": null
-  },
-  {
-    "Id": 20099720,
-    "Name": "Hopen",
-    "Description": "Auto added by MetService",
-    "Latitude": 76.5097,
-    "Longitude": 25.0133,
     "Elevation": null
   },
   {
@@ -528,14 +464,6 @@
     "Elevation": null
   },
   {
-    "Id": 20099950,
-    "Name": "Jan Mayen",
-    "Description": "Auto added by MetService",
-    "Latitude": 70.9394,
-    "Longitude": -8.669,
-    "Elevation": null
-  },
-  {
     "Id": 6175049,
     "Name": "Jomfruland",
     "Description": "052500",
@@ -544,27 +472,11 @@
     "Elevation": null
   },
   {
-    "Id": 20099935,
-    "Name": "Karl Xii Øya",
-    "Description": "Auto added by MetService",
-    "Latitude": 80.6518,
-    "Longitude": 25.0048,
-    "Elevation": null
-  },
-  {
     "Id": 18995059,
     "Name": "Kilboghavn",
     "Description": "Idriftsatt 26.01.2023",
     "Latitude": 66.489633,
     "Longitude": 13.228116,
-    "Elevation": null
-  },
-  {
-    "Id": 20099370,
-    "Name": "Kirkenes",
-    "Description": "N/A",
-    "Latitude": null,
-    "Longitude": null,
     "Elevation": null
   },
   {
@@ -589,14 +501,6 @@
     "Description": "<Valgfri tekst>",
     "Latitude": 60.337542,
     "Longitude": 5.210791,
-    "Elevation": null
-  },
-  {
-    "Id": 20099740,
-    "Name": "Kongsøya",
-    "Description": "Auto added by MetService",
-    "Latitude": 78.918,
-    "Longitude": 28.834,
     "Elevation": null
   },
   {
@@ -637,14 +541,6 @@
     "Description": "Auto added by MetService",
     "Latitude": 59.0705,
     "Longitude": 5.4122,
-    "Elevation": null
-  },
-  {
-    "Id": 20099938,
-    "Name": "Kvitøya",
-    "Description": "Auto added by MetService",
-    "Latitude": 80.1035,
-    "Longitude": 31.4585,
     "Elevation": null
   },
   {
@@ -760,27 +656,11 @@
     "Elevation": null
   },
   {
-    "Id": 11825059,
-    "Name": "Melkøya",
-    "Description": "Idriftsatt 03.11.21 Lat:70.68914 Long: 23.597407",
-    "Latitude": null,
-    "Longitude": null,
-    "Elevation": null
-  },
-  {
     "Id": 476004777,
     "Name": "Midtfjordskjær",
     "Description": "047600",
     "Latitude": 59.054023,
     "Longitude": 9.655742,
-    "Elevation": null
-  },
-  {
-    "Id": 20076900,
-    "Name": "Mike",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
     "Elevation": null
   },
   {
@@ -872,27 +752,11 @@
     "Elevation": null
   },
   {
-    "Id": 20039100,
-    "Name": "Oksøy Fyr",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
-    "Elevation": null
-  },
-  {
     "Id": 20062480,
     "Name": "Ona Ii",
     "Description": "Auto added by MetService",
     "Latitude": 62.8585,
     "Longitude": 6.5378,
-    "Elevation": null
-  },
-  {
-    "Id": 20090721,
-    "Name": "Rebbenes",
-    "Description": "",
-    "Latitude": null,
-    "Longitude": null,
     "Elevation": null
   },
   {
@@ -1037,14 +901,6 @@
     "Description": "Auto added by MetService",
     "Latitude": 68.1535,
     "Longitude": 14.6485,
-    "Elevation": null
-  },
-  {
-    "Id": 20076926,
-    "Name": "Sleipner A",
-    "Description": "Auto added by MetService",
-    "Latitude": 58.3711,
-    "Longitude": 1.9091,
     "Elevation": null
   },
   {
@@ -1344,27 +1200,11 @@
     "Elevation": null
   },
   {
-    "Id": 20099927,
-    "Name": "Verlegenhuken",
-    "Description": "Auto added by MetService",
-    "Latitude": 80.0555,
-    "Longitude": 16.2433,
-    "Elevation": null
-  },
-  {
     "Id": 20020932,
     "Name": "Vestfjorden",
     "Description": "Added by MetService",
     "Latitude": 68.2252,
     "Longitude": 15.4733,
-    "Elevation": null
-  },
-  {
-    "Id": 455004777,
-    "Name": "Vestre Brattholmen",
-    "Description": "045500",
-    "Latitude": null,
-    "Longitude": null,
     "Elevation": null
   },
   {
@@ -1485,14 +1325,6 @@
     "Description": "045100",
     "Latitude": 58.991665,
     "Longitude": 9.83757,
-    "Elevation": null
-  },
-  {
-    "Id": 20077040,
-    "Name": "Aasta Hansteen",
-    "Description": "Added by MetService",
-    "Latitude": 67.0672,
-    "Longitude": 7.0947,
     "Elevation": null
   }
 ]
