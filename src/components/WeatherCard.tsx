@@ -1,15 +1,13 @@
 import { LinearGradient } from 'expo-linear-gradient';
-import LottieView from 'lottie-react-native';
 import React from 'react';
 import {
   Image,
   Modal,
-  ScrollView,
   StyleSheet,
   Text,
   TouchableOpacity,
   useWindowDimensions,
-  View,
+  View
 } from 'react-native';
 import { ForecastDay, ForecastResponse } from '../models/forecast';
 import { SunriseIcon, SunsetIcon } from './SunIcons';
@@ -73,15 +71,6 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
     return `${hoursNum.toString().padStart(2, '0')}:${minutes}`;
   };
 
-  // Choose Lottie animation based on condition code or text
-  const pickAnimation = () => {
-    const code = current.condition.code;
-    if (code < 1030) return require('../assets/lottie/sunny.json');
-    if (code < 1063) return require('../assets/lottie/cloudy.json');
-    if (code < 1087) return require('../assets/lottie/rain.json');
-    return require('../assets/lottie/fog.json');
-  };
-
   return (
     <Modal visible={visible} transparent animationType="fade">
       <View style={styles.overlay}>
@@ -99,13 +88,10 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
 
           {/* Current Weather */}
           <View style={styles.currentSection}>
-            <LottieView
-              source={pickAnimation()}
-              autoPlay
-              loop
-              style={styles.lottie}
-            />
             <View style={styles.weatherMatrix}>
+              <View style={styles.lighthouseColumn}>
+                <Text style={styles.lighthouseEmoji}>🏝️</Text>
+              </View>
               <View style={styles.iconColumn}>
                 <Image
                   source={{ uri: `https:${current.condition.icon}` }}
@@ -114,10 +100,8 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
               </View>
               <View style={styles.dataColumn}>
                 <Text style={styles.currentTemp}>{Math.round(current.temp_c)}°C</Text>
-                <View style={styles.textRow}>
-                  <Text style={styles.currentDesc}>{current.condition.text}</Text>
-                  <Text style={styles.feelsLike}>Feels like {Math.round(current.feelslike_c)}°C</Text>
-                </View>
+                <Text style={styles.currentDesc}>{current.condition.text}</Text>
+                <Text style={styles.feelsLike}>Feels like {Math.round(current.feelslike_c)}°C</Text>
               </View>
             </View>
           </View>
@@ -166,28 +150,34 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
 
           {/* 3-Day Forecast */}
           <Text style={styles.forecastTitle}>3-Day Forecast</Text>
-          <ScrollView
-            horizontal
-            showsHorizontalScrollIndicator={false}
-            style={styles.forecastScroll}
-            contentContainerStyle={styles.forecastContent}
-          >
-            {forecast.forecastday.map((day: ForecastDay) => (
-              <View key={day.date} style={styles.dayCard}>
-                <Text style={styles.dayLabel}>
-                  {new Date(day.date).toLocaleDateString('en-US', { weekday: 'short' })}
-                </Text>
-                <Image
-                  source={{ uri: `https:${current.condition.icon}` }}
-                  style={styles.dayIcon}
-                />
-                <Text style={styles.dayTemp}>
-                  {Math.round(day.day.maxtemp_c)}° / {Math.round(day.day.mintemp_c)}°
-                </Text>
-                <Text style={styles.rainChance}>☔ {day.day.daily_chance_of_rain}%</Text>
-              </View>
-            ))}
-          </ScrollView>
+          <View style={styles.forecastContainer}>
+            {forecast.forecastday.map((day: ForecastDay, index: number) => {
+              // Determine day label (today, tomorrow, or day of week)
+              let dayLabel = '';
+              if (index === 0) {
+                dayLabel = 'Today';
+              } else if (index === 1) {
+                dayLabel = 'Tomorrow';
+              } else {
+                dayLabel = new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' });
+              }
+              
+              return (
+                <View key={day.date} style={styles.dayCard}>
+                  <Text style={styles.dayLabel}>
+                    {dayLabel}
+                  </Text>
+                  <Image
+                    source={{ uri: `https:${day.day.condition.icon}` }}
+                    style={styles.dayIcon}
+                  />
+                  <Text style={styles.dayTemp}>
+                    {Math.round(day.day.maxtemp_c)}° / {Math.round(day.day.mintemp_c)}°
+                  </Text>
+                </View>
+              );
+            })}
+          </View>
         </LinearGradient>
       </View>
     </Modal>
@@ -229,45 +219,48 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   currentSection: {
-    flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  lottie: {
-    width: 120,
-    height: 120,
+    marginVertical: 10,
   },
   weatherMatrix: {
     flexDirection: 'row',
-    marginLeft: 12,
-    width: 180,
+    width: '100%',
+    paddingHorizontal: 15,
+  },
+  lighthouseColumn: {
+    width: '33.33%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  lighthouseEmoji: {
+    fontSize: 60,
   },
   iconColumn: {
-    width: 60,
+    width: '33.33%',
     justifyContent: 'center',
+    alignItems: 'center',
   },
   dataColumn: {
-    flex: 1,
+    width: '33.33%',
     justifyContent: 'center',
   },
   conditionIcon: {
-    width: 60,
-    height: 120,
+    width: 80,
+    height: 80,
   },
   currentTemp: {
-    fontSize: 48,
+    fontSize: 32,
     fontWeight: '800',
     color: '#fff',
   },
-  textRow: {
-    marginTop: 4,
-  },
   currentDesc: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#eef',
+    marginTop: 2,
   },
   feelsLike: {
-    fontSize: 14,
+    fontSize: 12,
     color: '#eef',
     marginTop: 2,
   },
@@ -398,18 +391,16 @@ const styles = StyleSheet.create({
     marginBottom: 4,
     marginLeft: 8,
   },
-  forecastScroll: {
-    maxHeight: 120,
-  },
-  forecastContent: {
+  forecastContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     paddingHorizontal: 8,
   },
   dayCard: {
-    width: 80,
+    width: '32%',
     borderRadius: 16,
     backgroundColor: 'rgba(255,255,255,0.2)',
     padding: 8,
-    marginHorizontal: 6,
     alignItems: 'center',
   },
   dayLabel: {
@@ -426,10 +417,6 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: '#fff',
     fontWeight: '600',
-  },
-  rainChance: {
-    fontSize: 11,
-    color: '#eef',
   },
 });
 
