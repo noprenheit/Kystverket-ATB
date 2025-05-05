@@ -64,7 +64,7 @@ class LighthouseStore {
       if (!lighthouse) return;
 
       // Fetch forecast data
-      const forecastData = await fetchForecast(lighthouse.lat, lighthouse.lon);
+      const forecastData = await fetchForecast(lighthouse.lat, lighthouse.lon, lighthouse.name);
       
       // Cache the forecast data
       await cacheService.cacheForecast(id, forecastData);
