@@ -30,7 +30,7 @@ export const fetchForecast = async (
         params: {
           key: API_KEY,
           q: `${lat},${lon}`,
-          days: 2,
+          days: 3,
           aqi: 'no',
           alerts: 'no',
           tide: 'yes',
