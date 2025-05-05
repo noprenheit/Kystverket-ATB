@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Callout, Marker } from 'react-native-maps';
 import lighthouseStore from '../store/lighthouseStore';
-import InfoIcon from './InfoIcon';
+import InfoIcon from './icons/InfoIcon';
 
 interface LighthouseMarkerProps {
   id: string;
