@@ -1,3 +1,4 @@
+import { languageStore, t } from '@/src/i18n';
 import { observer } from 'mobx-react-lite';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
@@ -10,6 +11,7 @@ const SearchBar: React.FC = () => {
   // Debounce effect - updates the store after user stops typing
   useEffect(() => {
     const debounceTimeout = setTimeout(() => {
+      // Always update the filter in the store
       lighthouseStore.setFilter(searchText);
     }, 300);
     
@@ -17,13 +19,25 @@ const SearchBar: React.FC = () => {
     return () => clearTimeout(debounceTimeout);
   }, [searchText]);
 
+  // Force the component to respond to language changes
+  const currentLanguage = languageStore.currentLocale;
+
+  // Handle text changes with immediate filter clearing when empty
+  const handleTextChange = (text: string) => {
+    setSearchText(text);
+    // If text is cleared, immediately update the filter instead of waiting for debounce
+    if (text === '') {
+      lighthouseStore.setFilter('');
+    }
+  };
+
   return (
     <View style={styles.container}>
       <TextInput
         style={styles.input}
         value={searchText}
-        onChangeText={setSearchText}
-        placeholder="Search lighthouses..."
+        onChangeText={handleTextChange}
+        placeholder={t('weather.search_placeholder')}
         placeholderTextColor="#999"
         autoCapitalize="none"
         autoCorrect={false}
