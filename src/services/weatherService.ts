@@ -7,8 +7,9 @@ import { ForecastResponse } from '../models/forecast';
  */
 export const fetchForecast = async (
   lat: number,
-  lon: number
-): Promise<ForecastResponse> => {
+  lon: number,
+  placeName?: string
+): Promise<ForecastResponse & { originalPlaceName?: string }> => {
   // Expo Constants exposes your app.json "extra" fields here:
   const API_KEY =
     // for SDK ≤ 48:
@@ -38,7 +39,12 @@ export const fetchForecast = async (
       }
     );
 
-    return response.data as ForecastResponse;
+    // Add the original place name to the response data
+    const data = response.data as ForecastResponse;
+    return {
+      ...data,
+      originalPlaceName: placeName
+    };
   } catch (error) {
     console.error('Error fetching weather forecast:', error);
     throw error;
