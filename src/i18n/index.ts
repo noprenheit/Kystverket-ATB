@@ -1,5 +1,7 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import * as Localization from 'expo-localization';
 import { I18n } from 'i18n-js';
-import * as RNLocalize from 'react-native-localize';
+import { makeAutoObservable, runInAction } from 'mobx';
 
 // Import translations
 import en from './en.json';
@@ -15,22 +17,70 @@ const i18n = new I18n({
 i18n.defaultLocale = 'en';
 i18n.enableFallback = true;
 
-// Get the best available language from the device
-const getLocale = () => {
-  const locales = RNLocalize.getLocales();
-  if (locales.length === 0) return 'en';
-  
-  // Look for Norwegian or English specifically
-  const deviceLocale = locales[0].languageCode;
-  if (deviceLocale === 'no' || deviceLocale === 'nb' || deviceLocale === 'nn') {
-    return 'no';
-  }
-  
-  return 'en';
-};
+// Language Store to handle language changes
+class LanguageStore {
+  currentLocale = 'en';
 
-// Set the locale
-i18n.locale = getLocale();
+  constructor() {
+    makeAutoObservable(this);
+    this.initialize();
+  }
+
+  async initialize() {
+    try {
+      // Try to get saved language preference
+      const savedLocale = await AsyncStorage.getItem('userLanguage');
+      if (savedLocale) {
+        runInAction(() => {
+          this.currentLocale = savedLocale;
+          i18n.locale = savedLocale;
+        });
+      } else {
+        // If no saved preference, use device locale
+        this.setDeviceLocale();
+      }
+    } catch (error) {
+      console.error('Failed to initialize language settings', error);
+      this.setDeviceLocale();
+    }
+  }
+
+  setDeviceLocale() {
+    const deviceLocale = this.getDeviceLocale();
+    runInAction(() => {
+      this.currentLocale = deviceLocale;
+      i18n.locale = deviceLocale;
+    });
+  }
+
+  getDeviceLocale() {
+    const locale = Localization.locale || 'en';
+    // Look for Norwegian or English specifically
+    if (locale.startsWith('no') || locale.startsWith('nb') || locale.startsWith('nn')) {
+      return 'no';
+    }
+    
+    return 'en';
+  }
+
+  async setLocale(locale: 'en' | 'no') {
+    try {
+      await AsyncStorage.setItem('userLanguage', locale);
+      runInAction(() => {
+        this.currentLocale = locale;
+        i18n.locale = locale;
+      });
+    } catch (error) {
+      console.error('Failed to save language setting', error);
+    }
+  }
+
+  get isNorwegian() {
+    return this.currentLocale === 'no';
+  }
+}
+
+export const languageStore = new LanguageStore();
 
 // Create a t function that can be imported and used across the app
 export const t = (key: string, options = {}) => i18n.t(key, options);
