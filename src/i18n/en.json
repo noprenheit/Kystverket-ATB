@@ -9,8 +9,14 @@
     "loading": "Loading..."
   },
   "app": {
-    "name": "Kystvaer",
-    "description": "Your Norwegian coastal weather app"
+    "name": "Kystvær - ATB",
+    "description": "by Selcuk Oner"
+  },
+  "navigation": {
+    "map": "Map",
+    "favorites": "Favorites",
+    "settings": "Settings",
+    "details": "Details"
   },
   "weather": {
     "temperature": "Temperature",
@@ -18,6 +24,75 @@
     "wind_speed": "Wind Speed",
     "precipitation": "Precipitation",
     "humidity": "Humidity",
-    "pressure": "Pressure"
+    "pressure": "Pressure",
+    "search_placeholder": "Search for a location",
+    "lighthouse": "Lighthouse",
+    "forecast": "Forecast",
+    "feels_like": "Feels like",
+    "visibility": "Visibility",
+    "extended_forecast": "Extended Forecast",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "compass": {
+      "north": "N",
+      "east": "E",
+      "south": "S",
+      "west": "W"
+    },
+    "condition": {
+      "clear": "Clear",
+      "sunny": "Sunny",
+      "partly_cloudy": "Partly cloudy",
+      "cloudy": "Cloudy",
+      "overcast": "Overcast",
+      "mist": "Mist",
+      "fog": "Fog",
+      "light_rain": "Light rain",
+      "moderate_rain": "Moderate rain",
+      "heavy_rain": "Heavy rain",
+      "light_snow": "Light snow",
+      "moderate_snow": "Moderate snow",
+      "heavy_snow": "Heavy snow",
+      "thunderstorm": "Thunderstorm",
+      "sleet": "Sleet", 
+      "drizzle": "Drizzle"
+    },
+    "wind_direction": {
+      "n": "North",
+      "nne": "North-northeast",
+      "ne": "Northeast",
+      "ene": "East-northeast",
+      "e": "East",
+      "ese": "East-southeast",
+      "se": "Southeast",
+      "sse": "South-southeast",
+      "s": "South",
+      "ssw": "South-southwest",
+      "sw": "Southwest",
+      "wsw": "West-southwest",
+      "w": "West",
+      "wnw": "West-northwest",
+      "nw": "Northwest",
+      "nnw": "North-northwest"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "units": "Units",
+    "use_metric": "Use Metric Units",
+    "map": "Map",
+    "dark_map_style": "Dark Map Style",
+    "notifications": "Notifications",
+    "enable_notifications": "Enable Notifications",
+    "notifications_description": "Receive notifications for weather alerts and updates",
+    "language": "Language",
+    "language_english": "English",
+    "language_norwegian": "Norwegian"
+  },
+  "favorites": {
+    "no_favorites": "You don't have any favorites yet",
+    "add_favorites_hint": "Tap the star on a lighthouse to add it to favorites",
+    "latitude": "Lat",
+    "longitude": "Lon"
   }
 }

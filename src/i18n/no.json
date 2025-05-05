@@ -6,11 +6,17 @@
     "cancel": "Avbryt",
     "save": "Lagre",
     "delete": "Slett",
-    "loading": "Laster..."
+    "loading": "Laster …"
   },
   "app": {
-    "name": "Kystvaer",
-    "description": "Din norske kystværapp"
+    "name": "Kystvær - ATB",
+    "description": "av Selcuk Oner"
+  },
+  "navigation": {
+    "map": "Kart",
+    "favorites": "Favoritter",
+    "settings": "Innstillinger",
+    "details": "Detaljer"
   },
   "weather": {
     "temperature": "Temperatur",
@@ -18,6 +24,75 @@
     "wind_speed": "Vindhastighet",
     "precipitation": "Nedbør",
     "humidity": "Luftfuktighet",
-    "pressure": "Lufttrykk"
+    "pressure": "Lufttrykk",
+    "search_placeholder": "Søk etter sted",
+    "lighthouse": "Fyr",
+    "forecast": "Værvarsel",
+    "feels_like": "Føles som",
+    "visibility": "Sikt",
+    "extended_forecast": "Langtidsvarsel",
+    "today": "I dag",
+    "tomorrow": "I morgen",
+    "compass": {
+      "north": "N",
+      "east": "Ø",
+      "south": "S",
+      "west": "V"
+    },
+    "condition": {
+      "clear": "Klart",
+      "sunny": "Sol",
+      "partly_cloudy": "Delvis skyet",
+      "cloudy": "Skyet",
+      "overcast": "Overskyet",
+      "mist": "Tåke",
+      "fog": "Tett tåke",
+      "light_rain": "Lett regn",
+      "moderate_rain": "Moderat regn",
+      "heavy_rain": "Kraftig regn",
+      "light_snow": "Lett snø",
+      "moderate_snow": "Moderat snø",
+      "heavy_snow": "Kraftig snø",
+      "thunderstorm": "Tordenvær",
+      "sleet": "Sludd",
+      "drizzle": "Yr"
+    },
+    "wind_direction": {
+      "n": "Nord",
+      "nne": "Nord-nordøst",
+      "ne": "Nordøst",
+      "ene": "Øst-nordøst",
+      "e": "Øst",
+      "ese": "Øst-sørøst",
+      "se": "Sørøst",
+      "sse": "Sør-sørøst",
+      "s": "Sør",
+      "ssw": "Sør-sørvest",
+      "sw": "Sørvest",
+      "wsw": "Vest-sørvest",
+      "w": "Vest",
+      "wnw": "Vest-nordvest",
+      "nw": "Nordvest",
+      "nnw": "Nord-nordvest"
+    }
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "units": "Enheter",
+    "use_metric": "Bruk metriske enheter",
+    "map": "Kart",
+    "dark_map_style": "Mørkt karttema",
+    "notifications": "Varsler",
+    "enable_notifications": "Aktiver varsler",
+    "notifications_description": "Motta varsler om vær og oppdateringer",
+    "language": "Språk",
+    "language_english": "Engelsk",
+    "language_norwegian": "Norsk"
+  },
+  "favorites": {
+    "no_favorites": "Du har ingen favoritter ennå",
+    "add_favorites_hint": "Trykk på stjernen ved et fyr for å legge det til i favoritter",
+    "latitude": "Breddegrad",
+    "longitude": "Lengdegrad"
   }
 }
