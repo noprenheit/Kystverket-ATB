@@ -1,3 +1,5 @@
+import { languageStore, t } from '@/src/i18n';
+import { conditionMappings, windDirectionMappings } from '@/src/i18n/mappings';
 import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
 import {
@@ -10,7 +12,10 @@ import {
   View
 } from 'react-native';
 import { ForecastDay, ForecastResponse } from '../models/forecast';
-import { SunriseIcon, SunsetIcon } from './SunIcons';
+import HumidityIcon from './icons/HumidityIcon';
+import LighthouseIcon from './icons/LightHouseIcon';
+import { SunriseIcon, SunsetIcon } from './icons/SunIcons';
+import VisibilityIcon from './icons/VisibilityIcon';
 
 interface WeatherCardProps {
   visible: boolean;
@@ -23,10 +28,10 @@ const WindDirectionIndicator: React.FC<{ degree: number }> = ({ degree }) => {
   return (
     <View style={styles.compassContainer}>
       <View style={styles.compassRing}>
-        <Text style={[styles.compassPoint, { top: 0, left: '50%' }]}>N</Text>
-        <Text style={[styles.compassPoint, { top: '50%', right: 0 }]}>E</Text>
-        <Text style={[styles.compassPoint, { bottom: 0, left: '50%' }]}>S</Text>
-        <Text style={[styles.compassPoint, { top: '50%', left: 0 }]}>W</Text>
+        <Text style={[styles.compassPoint, { top: 0, left: '50%' }]}>{t('weather.compass.north')}</Text>
+        <Text style={[styles.compassPoint, { top: '50%', right: 0 }]}>{t('weather.compass.east')}</Text>
+        <Text style={[styles.compassPoint, { bottom: 0, left: '50%' }]}>{t('weather.compass.south')}</Text>
+        <Text style={[styles.compassPoint, { top: '50%', left: 0 }]}>{t('weather.compass.west')}</Text>
         
         <View 
           style={[
@@ -71,6 +76,29 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
     return `${hoursNum.toString().padStart(2, '0')}:${minutes}`;
   };
 
+  // Translate weather condition
+  const getTranslatedCondition = (condition: string) => {
+    const translationKey = conditionMappings[condition];
+    return translationKey ? t(translationKey) : condition;
+  };
+
+  // Translate wind direction
+  const getTranslatedWindDirection = (direction: string) => {
+    const translationKey = windDirectionMappings[direction];
+    return translationKey ? t(translationKey) : direction;
+  };
+
+  // Format date with localized weekday names
+  const getLocalizedWeekday = (dateStr: string) => {
+    const date = new Date(dateStr);
+    // Get the weekday using the current language
+    const locale = languageStore.currentLocale === 'no' ? 'nb-NO' : 'en-US';
+    const weekday = date.toLocaleDateString(locale, { weekday: 'long' });
+    
+    // Capitalize the first letter
+    return weekday.charAt(0).toUpperCase() + weekday.slice(1);
+  };
+
   return (
     <Modal visible={visible} transparent animationType="fade">
       <View style={styles.overlay}>
@@ -90,7 +118,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
           <View style={styles.currentSection}>
             <View style={styles.weatherMatrix}>
               <View style={styles.lighthouseColumn}>
-                <Text style={styles.lighthouseEmoji}>🏝️</Text>
+                <LighthouseIcon width={60} height={60} />
               </View>
               <View style={styles.iconColumn}>
                 <Image
@@ -100,8 +128,8 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
               </View>
               <View style={styles.dataColumn}>
                 <Text style={styles.currentTemp}>{Math.round(current.temp_c)}°C</Text>
-                <Text style={styles.currentDesc}>{current.condition.text}</Text>
-                <Text style={styles.feelsLike}>Feels like {Math.round(current.feelslike_c)}°C</Text>
+                <Text style={styles.currentDesc}>{getTranslatedCondition(current.condition.text)}</Text>
+                <Text style={styles.feelsLike}>{t('weather.feels_like')} {Math.round(current.feelslike_c)}°C</Text>
               </View>
             </View>
           </View>
@@ -121,45 +149,45 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ visible, onClose, data }) => 
           {/* Current Weather Details */}
           <View style={styles.weatherDetails}>
             <View style={styles.detailColumn}>
-              <Text style={styles.detailLabel}>Wind</Text>
+              <Text style={styles.detailLabel}>{t('weather.wind')}</Text>
               <Text style={styles.detailValue}>{current.wind_kph} km/h</Text>
               <View style={styles.iconContainer}>
                 <WindDirectionIndicator degree={current.wind_degree} />
               </View>
-              <Text style={styles.detailSubvalue}>{current.wind_dir}</Text>
+              <Text style={styles.detailSubvalue}>{getTranslatedWindDirection(current.wind_dir)}</Text>
             </View>
             <View style={styles.detailSeparator} />
             <View style={styles.detailColumn}>
-              <Text style={styles.detailLabel}>Humidity</Text>
+              <Text style={styles.detailLabel}>{t('weather.humidity')}</Text>
               <Text style={styles.detailValue}>{current.humidity}%</Text>
               <View style={styles.iconContainer}>
-                <Text style={styles.detailIcon}>💧</Text>
+                <HumidityIcon width={24} height={24} />
               </View>
               <Text style={styles.detailSubvalue}>&nbsp;</Text>
             </View>
             <View style={styles.detailSeparator} />
             <View style={styles.detailColumn}>
-              <Text style={styles.detailLabel}>Visibility</Text>
+              <Text style={styles.detailLabel}>{t('weather.visibility')}</Text>
               <Text style={styles.detailValue}>{current.vis_km} km</Text>
               <View style={styles.iconContainer}>
-                <Text style={styles.detailIcon}>👁️</Text>
+                <VisibilityIcon width={24} height={24} />
               </View>
               <Text style={styles.detailSubvalue}>&nbsp;</Text>
             </View>
           </View>
 
           {/* 3-Day Forecast */}
-          <Text style={styles.forecastTitle}>3-Day Forecast</Text>
+          <Text style={styles.forecastTitle}>{t('weather.extended_forecast')}</Text>
           <View style={styles.forecastContainer}>
             {forecast.forecastday.map((day: ForecastDay, index: number) => {
               // Determine day label (today, tomorrow, or day of week)
               let dayLabel = '';
               if (index === 0) {
-                dayLabel = 'Today';
+                dayLabel = t('weather.today');
               } else if (index === 1) {
-                dayLabel = 'Tomorrow';
+                dayLabel = t('weather.tomorrow');
               } else {
-                dayLabel = new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' });
+                dayLabel = getLocalizedWeekday(day.date);
               }
               
               return (
@@ -227,6 +255,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     paddingHorizontal: 15,
+    alignItems: 'center',
+    justifyContent: 'space-between',
   },
   lighthouseColumn: {
     width: '33.33%',
@@ -244,6 +274,7 @@ const styles = StyleSheet.create({
   dataColumn: {
     width: '33.33%',
     justifyContent: 'center',
+    alignItems: 'center',
   },
   conditionIcon: {
     width: 80,
@@ -253,16 +284,19 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: '800',
     color: '#fff',
+    textAlign: 'center',
   },
   currentDesc: {
     fontSize: 14,
     color: '#eef',
     marginTop: 2,
+    textAlign: 'center',
   },
   feelsLike: {
     fontSize: 12,
     color: '#eef',
     marginTop: 2,
+    textAlign: 'center',
   },
   weatherDetails: {
     flexDirection: 'row',
@@ -390,6 +424,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
     marginBottom: 4,
     marginLeft: 8,
+    textAlign: 'center',
   },
   forecastContainer: {
     flexDirection: 'row',
