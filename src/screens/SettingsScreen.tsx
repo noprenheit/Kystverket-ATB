@@ -1,7 +1,10 @@
+import EnglishIcon from '@/src/components/icons/EnglishIcon';
+import NorwegianIcon from '@/src/components/icons/NorwegianIcon';
+import { languageStore, t } from '@/src/i18n';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { observer } from 'mobx-react-lite';
 import React, { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, Switch, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Switch, Text, TouchableOpacity, View } from 'react-native';
 
 // Settings interface
 interface Settings {
@@ -11,11 +14,10 @@ interface Settings {
 }
 
 const SettingsScreen: React.FC = () => {
-  // Settings state
   const [settings, setSettings] = useState<Settings>({
-    useMetric: true,
+    useMetric: false,
     darkMapStyle: false,
-    enableNotifications: true
+    enableNotifications: false
   });
 
   // Load settings on component mount
@@ -45,42 +47,91 @@ const SettingsScreen: React.FC = () => {
     }
   };
 
+  // Switch language handler
+  const toggleLanguage = (locale: 'no' | 'en') => {
+    languageStore.setLocale(locale);
+  };
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Units</Text>
+        <Text style={styles.sectionTitle}>{t('settings.units')}</Text>
         <View style={styles.setting}>
-          <Text>Use Metric Units</Text>
+          <View style={styles.settingTextContainer}>
+            <Text>{t('settings.use_metric')}</Text>
+            <Text style={styles.tbdText}>(TBD)</Text>
+          </View>
           <Switch
             value={settings.useMetric}
             onValueChange={(value) => updateSetting('useMetric', value)}
+            disabled={true}
           />
         </View>
       </View>
 
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Map</Text>
+        <Text style={styles.sectionTitle}>{t('settings.map')}</Text>
         <View style={styles.setting}>
-          <Text>Dark Map Style</Text>
+          <View style={styles.settingTextContainer}>
+            <Text>{t('settings.dark_map_style')}</Text>
+            <Text style={styles.tbdText}>(TBD)</Text>
+          </View>
           <Switch
             value={settings.darkMapStyle}
             onValueChange={(value) => updateSetting('darkMapStyle', value)}
+            disabled={true}
           />
         </View>
       </View>
 
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Notifications</Text>
+        <Text style={styles.sectionTitle}>{t('settings.notifications')}</Text>
         <View style={styles.setting}>
-          <Text>Enable Notifications</Text>
+          <View style={styles.settingTextContainer}>
+            <Text>{t('settings.enable_notifications')}</Text>
+            <Text style={styles.tbdText}>(TBD)</Text>
+          </View>
           <Switch
             value={settings.enableNotifications}
             onValueChange={(value) => updateSetting('enableNotifications', value)}
+            disabled={true}
           />
         </View>
-        <Text style={styles.helpText}>
-          Receive notifications for weather alerts and updates
-        </Text>
+      </View>
+
+      <View style={styles.section}>
+        <Text style={styles.sectionTitle}>{t('settings.language')}</Text>
+        <View style={styles.languageContainer}>
+          <TouchableOpacity 
+            onPress={() => toggleLanguage('no')}
+            style={styles.flagOption}
+          >
+            <View style={[
+              styles.flagFrame,
+              languageStore.isNorwegian && styles.selectedFlagFrame
+            ]}>
+              <NorwegianIcon width={40} height={30} />
+            </View>
+            <Text style={[styles.flagLabel, languageStore.isNorwegian && styles.selectedLabel]}>
+              {t('settings.language_norwegian')}
+            </Text>
+          </TouchableOpacity>
+          
+          <TouchableOpacity 
+            onPress={() => toggleLanguage('en')}
+            style={styles.flagOption}
+          >
+            <View style={[
+              styles.flagFrame,
+              !languageStore.isNorwegian && styles.selectedFlagFrame
+            ]}>
+              <EnglishIcon width={40} height={30} />
+            </View>
+            <Text style={[styles.flagLabel, !languageStore.isNorwegian && styles.selectedLabel]}>
+              {t('settings.language_english')}
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </ScrollView>
   );
@@ -108,10 +159,40 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 8,
   },
-  helpText: {
+  languageContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  flagOption: {
+    alignItems: 'center',
+  },
+  flagFrame: {
+    padding: 8,
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: 'transparent',
+    marginBottom: 5,
+  },
+  selectedFlagFrame: {
+    borderColor: 'blue',
+  },
+  flagLabel: {
+    marginTop: 5,
+  },
+  selectedLabel: {
+    fontWeight: 'bold',
+  },
+  settingTextContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  tbdText: {
+    marginLeft: 8,
     fontSize: 12,
-    color: '#666',
-    marginTop: 4,
+    color: '#888',
+    fontStyle: 'italic',
   },
 });
 
