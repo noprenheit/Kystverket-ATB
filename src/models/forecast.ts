@@ -19,6 +19,9 @@ export interface DayForecast {
   maxtemp_c: number;
   mintemp_c: number;
   daily_chance_of_rain: number;
+  condition: {
+    icon: string;
+  };
 }
 
 // Astro data for each day
