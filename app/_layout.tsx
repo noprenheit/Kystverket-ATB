@@ -1,14 +1,11 @@
-// app/_layout.tsx
 import { t } from '@/src/i18n';
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
 import { observer } from 'mobx-react-lite';
 import React from 'react';
 
-// Use observer to automatically react to languageStore changes
+// Observer to detect languageStore changes
 function Layout() {
-    // We don't need the useEffect or manual refresh mechanism
-    // MobX observer will automatically re-render when languageStore changes
     
     return (
         <Tabs screenOptions={{
@@ -50,13 +47,6 @@ function Layout() {
                 name="index" 
                 options={{ 
                     href: null,
-                }}
-            />
-            <Tabs.Screen 
-                name="detail/[id]" 
-                options={{ 
-                    title: t('navigation.details'),
-                    href: null
                 }}
             />
         </Tabs>
