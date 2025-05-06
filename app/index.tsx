@@ -1,17 +1,16 @@
-import HomeScreen from '@/src/screens/HomeScreen';
 import lighthouseStore from '@/src/store/lighthouseStore';
+import { Redirect } from 'expo-router';
 import { observer } from 'mobx-react-lite';
 import { useEffect } from 'react';
 import { StyleSheet } from 'react-native';
 
 
 export default observer(function Index() {
-  // Initialize the store when the component mounts
   useEffect(() => {
     lighthouseStore.init();
   }, []);
   
-  return <HomeScreen />;
+  return <Redirect href="/map" />;
 });
 
 const styles = StyleSheet.create({
