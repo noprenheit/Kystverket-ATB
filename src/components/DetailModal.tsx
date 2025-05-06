@@ -15,13 +15,11 @@ const DetailModal = observer(() => {
   const [loading, setLoading] = useState(false);
   const [refreshInterval, setRefreshInterval] = useState<ReturnType<typeof setInterval> | null>(null);
 
-  // Auto-refresh while the modal is open
+  // Auto refresh while the modal is open
   useEffect(() => {
     if (detailId) {
-      // Show loading indicator
       setLoading(true);
-      
-      // Refresh data
+
       const refreshData = async () => {
         try {
           await lighthouseStore.refreshOne(detailId);
@@ -32,7 +30,7 @@ const DetailModal = observer(() => {
       
       refreshData();
 
-      // Set up an interval for refreshing
+      // Refresh data every X minutes
       const interval = setInterval(() => {
         refreshData();
       }, 300000); // 300000ms = 5 minutes
@@ -49,7 +47,6 @@ const DetailModal = observer(() => {
     };
   }, [detailId]);
 
-  // Handle modal close properly
   const handleClose = () => {
     if (refreshInterval) {
       clearInterval(refreshInterval);
@@ -61,7 +58,6 @@ const DetailModal = observer(() => {
 
   const forecastData = forecasts.get(detailId) as ForecastResponse | undefined;
   
-  // If data is still loading or no data is available, don't render anything
   if (!forecastData || loading) return null;
 
   return (
