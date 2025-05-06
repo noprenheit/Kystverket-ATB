@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { Platform, StyleSheet, Text, TouchableOpacity } from 'react-native';
 import { Callout, Marker } from 'react-native-maps';
 import lighthouseStore from '../store/lighthouseStore';
 import InfoIcon from './icons/InfoIcon';
@@ -23,25 +23,20 @@ const LighthouseMarker: React.FC<LighthouseMarkerProps> = ({ id, lat, lon, name 
 
   return (
     <Marker
-      coordinate={{
-        latitude: lat,
-        longitude: lon,
-      }}
+      coordinate={{ latitude: lat, longitude: lon }}
       pinColor="#2196F3"
+      {...(Platform.OS === 'android' ? { onPress: handlePress } : {})}
     >
-      <Callout 
-        tooltip 
-        onPress={handlePress}
-      >
-        <TouchableOpacity 
-          style={styles.callout}
-          onPress={handlePress}
-          activeOpacity={0.7}
-        >
-          <Text style={styles.calloutTitle} numberOfLines={1}>{name}</Text>
-          <InfoIcon size={20} />
-        </TouchableOpacity>
-      </Callout>
+      {Platform.OS === 'ios' && (
+        <Callout tooltip onPress={handlePress}>
+          <TouchableOpacity style={styles.callout} activeOpacity={0.7}>
+            <Text style={styles.calloutTitle} numberOfLines={1}>
+              {name}
+            </Text>
+            <InfoIcon size={20} />
+          </TouchableOpacity>
+        </Callout>
+      )}
     </Marker>
   );
 };
@@ -60,7 +55,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     fontSize: 14,
     marginRight: 8,
-  }
+  },
 });
 
 export default LighthouseMarker;
