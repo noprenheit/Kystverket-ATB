@@ -2,19 +2,13 @@ import axios from 'axios';
 import Constants from 'expo-constants';
 import { ForecastResponse } from '../models/forecast';
 
-/**
- * Fetches weather forecast from WeatherAPI.com
- */
 export const fetchForecast = async (
   lat: number,
   lon: number,
   placeName?: string
 ): Promise<ForecastResponse & { originalPlaceName?: string }> => {
-  // Expo Constants exposes your app.json "extra" fields here:
   const API_KEY =
-    // for SDK ≤ 48:
     Constants.manifest?.extra?.weatherApiKey
-    // for SDK ≥ 49, or EAS builds:
     ?? (Constants.expoConfig?.extra as any)?.weatherApiKey;
 
   if (!API_KEY) {
