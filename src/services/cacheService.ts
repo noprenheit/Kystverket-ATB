@@ -3,13 +3,9 @@ import lighthousesData from '../assets/LightHouses.json';
 import { ForecastResponse } from '../models/forecast';
 import { Lighthouse } from '../models/lighthouse';
 
-// Cache keys
 const LIGHTHOUSES_KEY = 'lighthouses';
 const FORECAST_KEY_PREFIX = 'forecast_';
 
-/**
- * Loads lighthouses data from cache
- */
 export const loadLighthousesJson = async (): Promise<Lighthouse[] | null> => {
   try {
     const jsonValue = await AsyncStorage.getItem(LIGHTHOUSES_KEY);
@@ -26,9 +22,6 @@ export const loadLighthousesJson = async (): Promise<Lighthouse[] | null> => {
   }
 };
 
-/**
- * Caches forecast data for a specific lighthouse
- */
 export const cacheForecast = async (id: string, data: ForecastResponse): Promise<void> => {
   try {
     const jsonValue = JSON.stringify(data);
@@ -38,9 +31,6 @@ export const cacheForecast = async (id: string, data: ForecastResponse): Promise
   }
 };
 
-/**
- * Loads cached forecast data for a specific lighthouse
- */
 export const loadCachedForecast = async (id: string): Promise<ForecastResponse | null> => {
   try {
     const jsonValue = await AsyncStorage.getItem(`${FORECAST_KEY_PREFIX}${id}`);
